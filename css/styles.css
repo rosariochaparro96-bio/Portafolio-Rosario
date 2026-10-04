@@ -1393,3 +1393,924 @@ body > footer {
         grid-template-columns: 1fr;
     }
 }
+/* ======================================================
+   RESPONSIVE GENERAL DEL PORTAFOLIO
+====================================================== */
+
+/* ======================================================
+   TABLET
+   Pantallas menores a 1024px
+====================================================== */
+@media (max-width: 1024px) {
+    /* =========================================
+       GENERAL
+    ========================================= */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    section {
+        padding: 70px 5%;
+    }
+    /* =========================================
+       HEADER
+    ========================================= */
+    body > header {
+        padding:
+            14px
+            5%;
+    }
+    nav {
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    .logo-nav {
+        height: 85px;
+        max-width: 160px;
+    }
+
+
+    /* =========================================
+       HERO / INICIO
+    ========================================= */
+
+    #inicio {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        padding-top: 70px;
+
+        padding-bottom: 70px;
+
+        text-align: center;
+    }
+
+
+    #inicio > div:first-child {
+        width: 100%;
+    }
+
+
+    #inicio h2 + p + p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    #inicio > div:first-child > div {
+        justify-content: center;
+    }
+
+
+    /* Mundo circular */
+
+    #inicio figure {
+        width: min(520px, 75vw);
+
+        min-height: 0;
+
+        aspect-ratio: 1 / 1;
+
+        margin: 0 auto;
+    }
+
+
+    #inicio figure div {
+        font-size: 7rem;
+    }
+
+
+    #inicio figure img {
+        max-width: 85%;
+
+        height: auto;
+    }
+
+
+    /* =========================================
+       ECOSISTEMA
+    ========================================= */
+
+    #mundo > div {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+
+    /* =========================================
+       PROYECTOS
+    ========================================= */
+
+    .proyectos-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 25px;
+    }
+
+
+    .futuros-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* =========================================
+       SOBRE MÍ
+    ========================================= */
+
+    .sobre-mi-contenedor {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .sobre-mi-imagen {
+        max-width: 550px;
+
+        margin: 0 auto;
+    }
+
+
+    .sobre-mi-imagen img {
+        height: 500px;
+    }
+
+
+    .sobre-mi-imagen::before {
+        height: 500px;
+    }
+
+
+    .sobre-mi-texto {
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        padding-top: 0;
+    }
+
+
+    /* =========================================
+       TECNOLOGÍAS
+    ========================================= */
+
+    .tecnologias-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 22px;
+    }
+
+}
+
+
+/* ======================================================
+   CELULAR
+   Pantallas menores a 768px
+====================================================== */
+
+@media (max-width: 768px) {
+
+    /* =========================================
+       GENERAL
+    ========================================= */
+
+    html,
+    body {
+        width: 100%;
+
+        max-width: 100%;
+
+        overflow-x: hidden;
+    }
+
+
+    section,
+    #sobre-mi,
+    #proyectos,
+    #tecnologias {
+        padding:
+            60px
+            20px;
+    }
+
+
+    section > header {
+        margin-bottom: 35px;
+    }
+
+
+    section h2 {
+        font-size:
+            clamp(
+                2rem,
+                9vw,
+                2.7rem
+            );
+    }
+
+
+    /* =========================================
+       HEADER Y NAVEGACIÓN
+    ========================================= */
+
+    body > header {
+        padding:
+            10px
+            16px;
+
+        position: relative;
+    }
+
+
+    nav {
+        width: 100%;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 12px;
+    }
+
+
+    .logo-link {
+        margin: 0 auto;
+    }
+
+
+    .logo-nav {
+        height: 70px;
+
+        max-width: 145px;
+
+        margin: 0 auto;
+    }
+
+
+    nav ul {
+        width: 100%;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap:
+            10px
+            16px;
+    }
+
+
+    nav a {
+        font-size: 0.86rem;
+    }
+
+
+    /* =========================================
+       HERO / INICIO
+    ========================================= */
+
+    #inicio {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding:
+            55px
+            20px;
+
+        text-align: center;
+    }
+
+
+    #inicio::before {
+        width: 220px;
+
+        height: 220px;
+
+        left: -120px;
+    }
+
+
+    #inicio > div:first-child > p:first-child {
+        font-size: 0.72rem;
+
+        letter-spacing: 2px;
+    }
+
+
+    #inicio h1 {
+        font-size:
+            clamp(
+                2.5rem,
+                12vw,
+                3.5rem
+            );
+
+        line-height: 1.05;
+
+        letter-spacing: -1.5px;
+
+        margin-bottom: 24px;
+    }
+
+
+    #inicio h2 {
+        font-size: 1.5rem;
+    }
+
+
+    #inicio h2 + p {
+        font-size: 1rem;
+    }
+
+
+    #inicio h2 + p + p {
+        max-width: 100%;
+
+        font-size: 0.95rem;
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .lema {
+        font-size: 1.25rem;
+
+        line-height: 1.45;
+    }
+
+
+    /* =========================================
+       BOTONES DEL HERO
+    ========================================= */
+
+    #inicio > div:first-child > div {
+        width: 100%;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        align-items: stretch;
+    }
+
+
+    #inicio > div:first-child > div a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* =========================================
+       MUNDO / ILUSTRACIÓN HERO
+    ========================================= */
+
+    #inicio figure {
+        width:
+            min(
+                320px,
+                82vw
+            );
+
+        min-height: 0;
+
+        aspect-ratio: 1 / 1;
+
+        margin:
+            10px auto
+            0;
+    }
+
+
+    #inicio figure::before {
+        inset: -10px;
+    }
+
+
+    #inicio figure div {
+        width: 100%;
+
+        font-size: 5rem;
+    }
+
+
+    #inicio figure img {
+        width: 82%;
+
+        max-width: 280px;
+
+        height: auto;
+    }
+
+
+    #inicio figcaption {
+        max-width: 85%;
+
+        margin-top: 10px;
+
+        padding:
+            10px
+            14px;
+
+        font-size: 0.8rem;
+    }
+
+
+    /* =========================================
+       ECOSISTEMA
+    ========================================= */
+
+    #mundo > div {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    #mundo article {
+        min-height: auto;
+
+        padding:
+            26px
+            22px;
+    }
+
+
+    #mundo article span {
+        font-size: 2.5rem;
+
+        margin-bottom: 15px;
+    }
+
+
+    /* =========================================
+       PROYECTOS
+    ========================================= */
+
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+    }
+
+
+    .proyecto-card {
+        width: 100%;
+    }
+
+
+    .proyecto-imagen {
+        width: 100%;
+
+        height: auto;
+
+        aspect-ratio: 16 / 9;
+    }
+
+
+    .proyecto-imagen img {
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    .proyecto-etiqueta {
+        top: 12px;
+
+        left: 12px;
+
+        font-size: 0.68rem;
+    }
+
+
+    .proyecto-contenido {
+        padding: 22px;
+    }
+
+
+    .proyecto-contenido h3 {
+        font-size: 1.35rem;
+    }
+
+
+    .proyecto-resumen {
+        font-size: 0.92rem;
+    }
+
+
+    .mi-aportacion {
+        padding:
+            16px
+            17px;
+    }
+
+
+    .mi-aportacion p {
+        font-size: 0.85rem;
+    }
+
+
+    .proyecto-tags {
+        gap: 7px;
+    }
+
+
+    /* Proyectos futuros */
+
+    .proyectos-futuros {
+        margin-top: 55px;
+
+        padding-top: 35px;
+    }
+
+
+    .futuros-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    /* =========================================
+       SOBRE MÍ
+    ========================================= */
+
+    .sobre-mi-contenedor {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .sobre-mi-imagen {
+        width: 100%;
+
+        max-width: 500px;
+
+        margin: 0 auto;
+    }
+
+
+    .sobre-mi-imagen figure {
+        width: 100%;
+    }
+
+
+    .sobre-mi-imagen img {
+        width: 100%;
+
+        height: auto;
+
+        aspect-ratio: 4 / 5;
+
+        object-fit: cover;
+
+        border-radius: 22px;
+    }
+
+
+    /*
+       En celular quitamos el borde desplazado
+       para que no salga fuera de la pantalla.
+    */
+
+    .sobre-mi-imagen::before {
+        display: none;
+    }
+
+
+    .sobre-mi-imagen figcaption {
+        width: 100%;
+
+        margin-top: 16px;
+
+        padding:
+            12px
+            14px;
+
+        font-size: 0.82rem;
+
+        line-height: 1.55;
+    }
+
+
+    .sobre-mi-texto {
+        max-width: 100%;
+
+        padding-top: 0;
+    }
+
+
+    .sobre-mi-texto h2 {
+        font-size: 2.15rem;
+    }
+
+
+    .sobre-mi-texto p {
+        font-size: 0.95rem;
+
+        line-height: 1.7;
+    }
+
+
+    .sobre-mi-texto blockquote {
+        margin:
+            25px 0;
+
+        padding-left: 16px;
+
+        font-size: 1.05rem;
+    }
+
+
+    .btn-cv {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* =========================================
+       TECNOLOGÍAS
+    ========================================= */
+
+    .tecnologias-header {
+        margin-bottom: 35px;
+    }
+
+
+    .tecnologias-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .tecnologia-card {
+        width: 100%;
+
+        height: 210px;
+    }
+
+
+    .tecnologia-frente,
+    .tecnologia-reverso {
+        padding: 22px;
+    }
+
+
+    .tecnologia-icono {
+        width: 58px;
+
+        height: 58px;
+
+        font-size: 1.4rem;
+    }
+
+
+    /* =========================================
+       CONTACTO
+    ========================================= */
+
+    #contacto address {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    #contacto address p {
+        width: 100%;
+
+        margin: 0;
+    }
+
+
+    #contacto address a {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    body > footer {
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+
+        gap: 10px;
+
+        padding:
+            30px
+            20px;
+    }
+
+}
+
+
+/* ======================================================
+   CELULARES PEQUEÑOS
+   Pantallas menores a 480px
+====================================================== */
+
+@media (max-width: 480px) {
+
+    /* =========================================
+       HEADER
+    ========================================= */
+
+    .logo-nav {
+        height: 62px;
+
+        max-width: 130px;
+    }
+
+
+    nav ul {
+        gap:
+            8px
+            11px;
+    }
+
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+
+    /* =========================================
+       HERO
+    ========================================= */
+
+    #inicio {
+        padding:
+            45px
+            16px;
+    }
+
+
+    #inicio h1 {
+        font-size: 2.35rem;
+
+        letter-spacing: -1px;
+    }
+
+
+    #inicio h2 {
+        font-size: 1.3rem;
+    }
+
+
+    .lema {
+        font-size: 1.1rem;
+    }
+
+
+    #inicio figure {
+        width: 270px;
+
+        max-width: 82vw;
+    }
+
+
+    #inicio figcaption {
+        font-size: 0.75rem;
+    }
+
+
+    /* =========================================
+       SECCIONES
+    ========================================= */
+
+    section,
+    #sobre-mi,
+    #proyectos,
+    #tecnologias {
+        padding:
+            50px
+            16px;
+    }
+
+
+    /* =========================================
+       PROYECTOS
+    ========================================= */
+
+    .proyecto-contenido {
+        padding:
+            20px
+            18px;
+    }
+
+
+    .proyecto-tags span {
+        font-size: 0.7rem;
+
+        padding:
+            5px
+            9px;
+    }
+
+
+    /* =========================================
+       SOBRE MÍ
+    ========================================= */
+
+    .sobre-mi-texto h2 {
+        font-size: 1.9rem;
+    }
+
+
+    .sobre-mi-imagen figcaption {
+        font-size: 0.78rem;
+    }
+
+
+    /* =========================================
+       TECNOLOGÍAS
+    ========================================= */
+
+    .tecnologia-card {
+        height: 200px;
+    }
+
+
+    .tecnologia-frente,
+    .tecnologia-reverso {
+        padding: 18px;
+    }
+
+
+    .tecnologia-reverso p {
+        font-size: 0.82rem;
+    }
+
+}
+
+
+/* ======================================================
+   DISPOSITIVOS TÁCTILES
+====================================================== */
+
+@media (hover: none) and (pointer: coarse) {
+
+    /*
+       En celulares el hover puede quedarse activado.
+       Permitimos que la tarjeta se voltee usando focus.
+    */
+
+    .tecnologia-card:hover
+    .tecnologia-card-interior {
+        transform: none;
+    }
+
+
+    .tecnologia-card:focus
+    .tecnologia-card-interior {
+        transform:
+            rotateY(180deg);
+    }
+
+}
