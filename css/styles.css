@@ -8,7 +8,6 @@
 .lema span {
     color: #65a66f;
 }
-
 :root {
     --verde-oscuro: #103d35;
     --verde: #2f725f;
@@ -27,8 +26,6 @@
     --radio: 22px;
     --ancho-maximo: 1200px;
 }
-
-
 /* =========================================
    RESETEO BÁSICO
 ========================================= */
@@ -54,94 +51,58 @@ img {
     max-width: 100%;
     display: block;
 }
-
-
 a {
     color: inherit;
     text-decoration: none;
 }
 
-
 ul {
     list-style: none;
 }
 
-
-
 /* =========================================
    ENCABEZADO
 ========================================= */
-
 body > header {
-
     width: 100%;
-
     background-color:
         rgba(255, 255, 255, 0.94);
 
     border-bottom:
         1px solid var(--borde);
-
     display: flex;
-
     justify-content:
         space-between;
-
     align-items: center;
-
     padding:
         18px
         max(5%, calc((100% - var(--ancho-maximo)) / 2));
-
     position: sticky;
-
     top: 0;
-
     z-index: 1000;
-
     backdrop-filter: blur(12px);
-    
-}
-
-
+    }
 body > header > div a {
-
     display: flex;
-
     align-items: center;
-
     gap: 10px;
-
     font-size: 1.15rem;
-
     font-weight: 700;
-
     color: var(--verde-oscuro);
 }
-
-
 body > header > div span:first-child {
-
     font-size: 1.8rem;
 }
-
-
-
 /* =========================================
    NAVEGACIÓN
 ========================================= */
-
 nav {
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-
 /* LOGO */
-
 .logo-nav {
     width: auto;
     height: 105px;
@@ -149,27 +110,20 @@ nav {
     display: block;
     object-fit: contain;
 }
-
-
 /* Evita que aparezca la línea hover debajo del logo */
 .logo-link::after {
     display: none;
 }
 
-
 /* MENÚ */
-
 nav ul {
     display: flex;
     align-items: center;
-
     gap: 30px;
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
-
 
 nav a {
     font-size: 0.95rem;
@@ -199,188 +153,115 @@ nav a:hover::after {
 /* =========================================
    CONTENIDO GENERAL
 ========================================= */
-
 main {
-
     overflow: hidden;
 }
 
-
 section {
-
     padding:
         90px
         max(5%, calc((100% - var(--ancho-maximo)) / 2));
 }
-
-
 section > header {
-
     margin-bottom: 45px;
 }
-
-
 section > header > p:first-child {
-
     color: var(--verde);
-
     font-size: 0.85rem;
-
     font-weight: 700;
-
     letter-spacing: 3px;
-
     text-transform: uppercase;
 }
-
-
 section h2 {
-
     color: var(--verde-oscuro);
-
     font-size:
         clamp(2rem, 4vw, 3rem);
-
     line-height: 1.2;
-
     margin:
         8px 0 14px;
 }
-
-
 section > header > p:last-child {
-
     max-width: 650px;
-
     color: var(--texto-secundario);
 }
-
-
-
 /* =========================================
    HERO / INICIO
 ========================================= */
-
 #inicio {
-
     min-height: 88vh;
-
     display: grid;
-
     grid-template-columns:
         1.05fr 0.95fr;
-
     align-items: center;
-
     gap: 70px;
-
     position: relative;
-
     background:
-
         radial-gradient(
             circle at 85% 20%,
             rgba(101, 166, 111, 0.18),
             transparent 35%
         ),
-
         linear-gradient(
             135deg,
             #ffffff,
             #eef7f2
         );
 }
-
-
 #inicio::before {
-
     content: "";
-
     position: absolute;
-
     width: 350px;
-
     height: 350px;
-
     border-radius: 50%;
-
     background:
         rgba(63, 137, 105, 0.08);
-
     left: -180px;
-
     top: 100px;
 }
 
-
 #inicio > div:first-child {
-
     position: relative;
-
     z-index: 2;
 }
 
-
 #inicio > div:first-child > p:first-child {
-
     color: var(--verde);
-
     font-size: 0.85rem;
-
     font-weight: 700;
-
     letter-spacing: 3px;
-
     text-transform: uppercase;
-
     margin-bottom: 18px;
 }
 
 
 #inicio h1 {
-
     color: var(--verde-oscuro);
-
     font-size:
         clamp(3rem, 6vw, 5.6rem);
-
     line-height: 0.98;
-
     letter-spacing: -3px;
-
     margin-bottom: 30px;
 }
 
 
 #inicio h2 {
-
     font-size:
         clamp(1.5rem, 3vw, 2.2rem);
-
     margin-bottom: 5px;
 }
 
-
 #inicio h2 + p {
-
     color: var(--verde);
-
     font-weight: 700;
-
     font-size: 1.1rem;
-
     margin-bottom: 20px;
 }
 
 
 #inicio h2 + p + p {
-
     max-width: 610px;
-
     color: var(--texto-secundario);
-
     font-size: 1.05rem;
-
     margin-bottom: 32px;
 }
 
@@ -389,40 +270,26 @@ section > header > p:last-child {
 /* =========================================
    BOTONES HERO
 ========================================= */
-
 #inicio > div:first-child > div {
-
     display: flex;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
-
 #inicio > div:first-child > div a {
-
     display: inline-block;
-
     padding: 14px 24px;
-
     border-radius: 50px;
-
     font-weight: 700;
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease,
         background-color 0.3s ease;
 }
 
-
 #inicio > div:first-child > div a:first-child {
-
     background-color: var(--verde-oscuro);
-
     color: var(--blanco);
-
     box-shadow:
         0 12px 25px
         rgba(16, 61, 53, 0.2);
@@ -430,281 +297,183 @@ section > header > p:last-child {
 
 
 #inicio > div:first-child > div a:last-child {
-
     border:
         1px solid var(--verde);
-
     color: var(--verde-oscuro);
-
     background: transparent;
 }
 
 
 #inicio > div:first-child > div a:hover {
-
     transform: translateY(-3px);
 }
 
-/* =========================================
-   SOBRE MÍ
-========================================= */
 
 /* =========================================
    SOBRE MÍ
 ========================================= */
-
 #sobre-mi {
     background:
         linear-gradient(
             rgba(21, 63, 57, 0.97),
             rgba(21, 63, 57, 0.97)
         );
-
     padding: 90px 8%;
-
     color: var(--blanco);
 }
-
 
 /* =========================================
    CONTENEDOR PRINCIPAL
 ========================================= */
-
 .sobre-mi-contenedor {
     max-width: 1200px;
-
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: 0.9fr 1.1fr;
-
     gap: 70px;
-
     align-items: start;
 }
-
 
 /* =========================================
    BLOQUE DE IMAGEN
 ========================================= */
-
 .sobre-mi-imagen {
     position: relative;
-
     width: 100%;
-
     max-width: 500px;
 }
 
-
 /* FIGURE */
-
 .sobre-mi-imagen figure {
     margin: 0;
-
     width: 100%;
 }
-
-
 /* =========================================
    FOTO
 ========================================= */
-
 .sobre-mi-imagen img {
     width: 100%;
-
     height: 560px;
-
     object-fit: cover;
-
     object-position: center;
-
     display: block;
-
     position: relative;
-
     z-index: 2;
-
     border-radius: 28px;
-
     box-shadow:
         0 22px 45px
         rgba(0, 0, 0, 0.22);
 }
-
-
 /* =========================================
    BORDE DECORATIVO
 ========================================= */
-
 .sobre-mi-imagen::before {
     content: "";
-
     position: absolute;
-
     top: 16px;
-
     left: 16px;
-
     width: 100%;
-
     height: 560px;
-
     border:
         2px solid
         rgba(151, 183, 170, 0.55);
-
     border-radius: 28px;
-
     z-index: 1;
-
     pointer-events: none;
 }
-
-
 /* =========================================
    PIE DE FIGURA
 ========================================= */
-
 .sobre-mi-imagen figcaption {
     width: 92%;
-
     margin:
         22px auto
         0;
-
     padding:
         14px 16px
         14px 18px;
-
     position: relative;
-
     z-index: 3;
-
     font-size: 0.88rem;
-
     line-height: 1.6;
-
     font-style: italic;
-
     color: #c4d6cf;
-
     background:
         rgba(255, 255, 255, 0.04);
-
     border-left:
         3px solid
         #8eafa2;
-
     border-radius:
         0 12px 12px 0;
 }
 
-
 /* PEQUEÑO DETALLE DECORATIVO */
-
 .sobre-mi-imagen figcaption::before {
     content: "🌿";
-
     margin-right: 8px;
-
     font-style: normal;
-
     opacity: 0.8;
 }
-
-
 /* =========================================
    TEXTO SOBRE MÍ
 ========================================= */
-
 .sobre-mi-texto {
     max-width: 650px;
-
     padding-top: 10px;
 }
-
 
 /* =========================================
    ETIQUETA "MI HISTORIA"
 ========================================= */
-
 .seccion-etiqueta {
     display: inline-block;
-
     margin:
         0 0 18px 0;
-
     color: #a9c8bc;
-
     font-size: 0.82rem;
-
     font-weight: 700;
-
     letter-spacing: 3px;
-
     line-height: 1.4;
-
     text-transform: uppercase;
 }
-
-
 /* =========================================
    TÍTULO
 ========================================= */
-
 .sobre-mi-texto h2 {
     margin:
         0 0 30px;
-
     color: var(--blanco);
-
     font-size:
         clamp(2.3rem, 4vw, 3.5rem);
-
     line-height: 1.1;
 }
-
 
 /* =========================================
    PÁRRAFOS
 ========================================= */
-
 .sobre-mi-texto p {
     margin-bottom: 20px;
-
     color:
         rgba(255, 255, 255, 0.84);
-
     font-size: 1rem;
-
     line-height: 1.8;
 }
-
 
 /* =========================================
    FRASE DESTACADA
 ========================================= */
-
 .sobre-mi-texto blockquote {
     margin:
         32px 0;
-
     padding:
         4px 0
         4px 20px;
-
     border-left:
         3px solid
         #8db6a5;
-
     color: #dcebe5;
-
     font-size: 1.25rem;
-
     font-style: italic;
-
     line-height: 1.6;
 }
 
@@ -712,183 +481,43 @@ section > header > p:last-child {
 /* =========================================
    BOTÓN CV
 ========================================= */
-
 .btn-cv {
     display: inline-block;
-
     margin-top: 10px;
-
     padding:
         13px 28px;
-
     border-radius: 50px;
-
     background-color:
         var(--blanco);
-
     color:
         var(--verde-oscuro);
-
     font-weight: 700;
-
     text-decoration: none;
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease,
         background-color 0.3s ease;
 }
 
-
 .btn-cv:hover {
     transform:
         translateY(-3px);
-
     background-color:
         #edf4f1;
-
     color:
         var(--verde-oscuro);
-
     box-shadow:
         0 12px 25px
         rgba(0, 0, 0, 0.18);
 }
 
-
-/* =========================================
-   RESPONSIVE - TABLET
-========================================= */
-
-@media (max-width: 900px) {
-
-    .sobre-mi-contenedor {
-        grid-template-columns: 1fr;
-
-        gap: 55px;
-    }
-
-
-    .sobre-mi-imagen {
-        max-width: 550px;
-
-        margin: 0 auto;
-    }
-
-
-    .sobre-mi-imagen img {
-        height: 500px;
-    }
-
-
-    .sobre-mi-imagen::before {
-        height: 500px;
-    }
-
-
-    .sobre-mi-texto {
-        max-width: 100%;
-
-        padding-top: 0;
-    }
-
-}
-
-
-/* =========================================
-   RESPONSIVE - CELULAR
-========================================= */
-
-@media (max-width: 550px) {
-
-    #sobre-mi {
-        padding:
-            65px 20px;
-    }
-
-
-    .sobre-mi-contenedor {
-        gap: 45px;
-    }
-
-
-    .sobre-mi-imagen {
-        max-width: 100%;
-    }
-
-
-    .sobre-mi-imagen img {
-        height: 420px;
-
-        border-radius: 22px;
-    }
-
-
-    .sobre-mi-imagen::before {
-        height: 420px;
-
-        top: 10px;
-
-        left: 10px;
-
-        border-radius: 22px;
-    }
-
-
-    .sobre-mi-imagen figcaption {
-        width: 95%;
-
-        margin-top: 18px;
-
-        padding:
-            12px 14px;
-
-        font-size: 0.82rem;
-
-        line-height: 1.55;
-    }
-
-
-    .sobre-mi-texto h2 {
-        font-size: 2.2rem;
-    }
-
-
-    .sobre-mi-texto p {
-        font-size: 0.95rem;
-
-        line-height: 1.7;
-    }
-
-
-    .sobre-mi-texto blockquote {
-        font-size: 1.05rem;
-
-        margin:
-            25px 0;
-    }
-
-
-    .btn-cv {
-        width: 100%;
-
-        text-align: center;
-    }
-
-}
-
 /* =========================================
    MUNDO BIOLÓGICO DEL HERO
 ========================================= */
-
 #inicio figure {
-
     min-height: 500px;
-
     border-radius: 50%;
-
     background:
-
         radial-gradient(
             circle at 50% 40%,
             #d7f0cc,
@@ -897,19 +526,12 @@ section > header > p:last-child {
             #1a5c55 70%,
             #103d35 100%
         );
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
     text-align: center;
-
     position: relative;
-
     box-shadow:
         0 30px 80px
         rgba(22, 78, 65, 0.25);
@@ -917,58 +539,38 @@ section > header > p:last-child {
 
 
 #inicio figure::before {
-
     content: "";
-
     position: absolute;
-
     inset: -25px;
-
     border:
         1px solid rgba(47, 114, 95, 0.25);
-
     border-radius: 50%;
 }
 
 
 #inicio figure div {
-
     font-size: 9rem;
-
     animation:
         flotar 5s ease-in-out infinite;
 }
 
 
 #inicio figcaption {
-
     max-width: 270px;
-
     margin-top: 20px;
-
     padding: 12px 18px;
-
     background:
-        rgba(255, 255, 255, 0.9);
-
+       rgba(255, 255, 255, 0.9);
     border-radius: 18px;
-
     color: var(--verde-oscuro);
-
     font-weight: 700;
 }
-
-
 @keyframes flotar {
-
     0%,
     100% {
-
         transform: translateY(0);
     }
-
     50% {
-
         transform: translateY(-15px);
     }
 }
@@ -978,35 +580,25 @@ section > header > p:last-child {
 /* =========================================
    MUNDO / CINCO REINOS
 ========================================= */
-
 #mundo {
-
     background-color: var(--blanco);
 }
 
 
 #mundo > div {
-
     display: grid;
-
     grid-template-columns:
         repeat(5, 1fr);
-
     gap: 18px;
 }
 
 
 #mundo article {
-
     min-height: 300px;
-
     padding: 28px 22px;
-
     border-radius: var(--radio);
-
     border:
         1px solid var(--borde);
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -1014,15 +606,12 @@ section > header > p:last-child {
 
 
 #mundo article:hover {
-
     transform: translateY(-8px);
-
     box-shadow: var(--sombra);
 }
 
 
 #mundo article:nth-child(1) {
-
     background:
         linear-gradient(
             180deg,
@@ -1033,7 +622,6 @@ section > header > p:last-child {
 
 
 #mundo article:nth-child(2) {
-
     background:
         linear-gradient(
             180deg,
@@ -1044,7 +632,6 @@ section > header > p:last-child {
 
 
 #mundo article:nth-child(3) {
-
     background:
         linear-gradient(
             180deg,
@@ -1055,7 +642,6 @@ section > header > p:last-child {
 
 
 #mundo article:nth-child(4) {
-
     background:
         linear-gradient(
             180deg,
@@ -1066,7 +652,6 @@ section > header > p:last-child {
 
 
 #mundo article:nth-child(5) {
-
     background:
         linear-gradient(
             180deg,
@@ -1077,35 +662,26 @@ section > header > p:last-child {
 
 
 #mundo article span {
-
     display: block;
-
     font-size: 3rem;
-
     margin-bottom: 22px;
 }
 
 
 #mundo article h3 {
-
     color: var(--verde-oscuro);
-
     font-size: 1.4rem;
 }
 
 
 #mundo article h4 {
-
     color: var(--verde);
-
     margin-bottom: 12px;
 }
 
 
 #mundo article p {
-
     color: var(--texto-secundario);
-
     font-size: 0.92rem;
 }
 
@@ -1114,163 +690,311 @@ section > header > p:last-child {
 /* =========================================
    PROYECTOS
 ========================================= */
-
 #proyectos {
-
+    padding: 90px 8%;
     background:
         linear-gradient(
             180deg,
-            var(--verde-suave),
-            var(--crema)
+            #f3f8f6,
+            #ffffff
         );
 }
 
 
-#proyectos > div {
+/* =========================================
+   ENCABEZADO
+========================================= */
 
-    display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
-    gap: 22px;
+.proyectos-header {
+    max-width: 1200px;
+    margin:
+        0 auto
+        50px;
 }
 
 
-#proyectos article {
+.proyectos-header > p:first-child {
+    color: #397568;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
 
-    background-color: var(--blanco);
 
-    border-radius: var(--radio);
+.proyectos-header h2 {
+    margin:
+        8px 0 15px;
+    color: #153f39;
+    font-size:
+        clamp(2.3rem, 4vw, 3.5rem);
+}
 
+
+.proyectos-header > p:last-child {
+    max-width: 650px;
+    color: #65746f;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   GRID PRINCIPAL
+========================================= */
+
+.proyectos-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:
+        repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.proyecto-card {
     overflow: hidden;
-
+    background-color: #ffffff;
     border:
-        1px solid var(--borde);
-
-    padding-bottom: 25px;
-
+        1px solid #dbe6e2;
+    border-radius: 24px;
+    box-shadow:
+        0 15px 35px
+        rgba(20, 63, 55, 0.08);
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
 }
 
 
-#proyectos article:hover {
-
-    transform: translateY(-7px);
-
-    box-shadow: var(--sombra);
+.proyecto-card:hover {
+    transform:
+        translateY(-6px);
+    box-shadow:
+        0 22px 45px
+        rgba(20, 63, 55, 0.14);
 }
 
 
-#proyectos article > div {
+/* =========================================
+   IMAGEN
+========================================= */
+.proyecto-imagen {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    background-color: #e8f1ee;
+}
 
-    height: 190px;
+.proyecto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-    display: flex;
 
-    justify-content: center;
+/* ETIQUETA */
 
-    align-items: center;
-
-    font-size: 5rem;
-
+.proyecto-etiqueta {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    padding:
+        7px 13px;
     background:
-
-        linear-gradient(
-            135deg,
-            #dcefdc,
-            #c9e3e1
-        );
-}
-
-
-#proyectos article h3 {
-
-    padding:
-        20px 22px 4px;
-
-    color: var(--verde-oscuro);
-
-    font-size: 1.35rem;
-}
-
-
-#proyectos article p {
-
-    padding:
-        0 22px;
-
-    color: var(--texto-secundario);
-
-    font-size: 0.92rem;
-
-    margin-bottom: 14px;
-}
-
-
-#proyectos article p:nth-of-type(2) {
-
-    color: var(--verde);
-
-    font-size: 0.8rem;
-
+        rgba(21, 63, 57, 0.92);
+    color: white;
+    border-radius: 50px;
+    font-size: 0.75rem;
     font-weight: 700;
 }
 
 
-#proyectos article a {
-
-    display: inline-block;
-
-    margin:
-        4px 22px;
-
-    color: var(--azul);
-
-    font-weight: 700;
+/* =========================================
+   CONTENIDO
+========================================= */
+.proyecto-contenido {
+    padding: 28px;
 }
 
 
-#proyectos article a:hover {
+.proyecto-contenido h3 {
+    margin-bottom: 12px;
+    color: #153f39;
+    font-size: 1.5rem;
+}
 
+
+.proyecto-resumen {
+    margin-bottom: 20px;
+    color: #65746f;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   MI APORTACIÓN
+========================================= */
+.mi-aportacion {
+    margin-bottom: 22px;
+    padding:
+        18px 20px;
+    background-color: #f1f6f4;
+    border-left:
+        3px solid #779d90;
+    border-radius:
+        0 14px 14px 0;
+}
+
+
+.mi-aportacion strong {
+    display: block;
+    margin-bottom: 7px;
+    color: #24594f;
+    font-size: 0.82rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.mi-aportacion p {
+    margin: 0;
+    color: #53645e;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   TECNOLOGÍAS
+========================================= */
+.proyecto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.proyecto-tags span {
+    padding:
+        6px 11px;
+    border:
+        1px solid #cbdcd6;
+    border-radius: 50px;
+    color: #35695f;
+    background-color: #f8fbfa;
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   ENLACE
+========================================= */
+
+.proyecto-link {
+    color: #215f53;
+    font-weight: 700;
+    text-decoration: none;
+}
+.proyecto-link:hover {
     text-decoration: underline;
 }
+
+
+/* =========================================
+   PROYECTOS FUTUROS
+========================================= */
+.proyectos-futuros {
+    max-width: 1200px;
+    margin:
+        80px auto
+        0;
+    padding-top: 45px;
+    border-top:
+        1px solid #dce7e3;
+}
+
+
+.proyectos-futuros-header p {
+    margin-bottom: 6px;
+    color: #78948b;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.proyectos-futuros-header h3 {
+    margin-bottom: 25px;
+    color: #153f39;
+}
+
+
+.futuros-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+    gap: 18px;
+}
+.proyecto-futuro {
+    padding: 22px;
+    background-color: #f7faf9;
+    border:
+        1px dashed #becfc9;
+    border-radius: 18px;
+}
+
+
+.proyecto-futuro span {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 2rem;
+}
+.proyecto-futuro h4 {
+    margin-bottom: 8px;
+    color: #214f46;
+}
+.proyecto-futuro p {
+    margin-bottom: 12px;
+    color: #71817c;
+    font-size: 0.82rem;
+}
+.proyecto-futuro small {
+    color: #79958c;
+    font-weight: 700;
+}
+
 
 /* =========================================
    FOTO
 ========================================= */
-
 .sobre-mi-imagen {
     position: relative;
 }
 
 
 /* FIGURE */
-
 .sobre-mi-imagen figure {
     margin: 0;
 }
 
 
 /* FOTO */
-
 .sobre-mi-imagen img {
     width: 100%;
     height: 560px;
-
     object-fit: cover;
     object-position: center;
-
     border-radius: 30px;
-
     display: block;
-
     position: relative;
-
     z-index: 1;
-
     box-shadow:
         0 25px 50px
         rgba(0, 0, 0, 0.25);
@@ -1280,22 +1004,14 @@ section > header > p:last-child {
 /* =========================================
    PIE DE FOTO
 ========================================= */
-
 .sobre-mi-imagen figcaption {
     margin-top: 18px;
-
     padding: 0 5px;
-
     font-size: 0.88rem;
-
     line-height: 1.6;
-
     color: #b4cbc2;
-
     font-style: italic;
-
     position: relative;
-
     z-index: 2;
 }
 
@@ -1303,22 +1019,15 @@ section > header > p:last-child {
 /* =========================================
    BORDE DECORATIVO
 ========================================= */
-
 .sobre-mi-imagen::before {
     content: "";
-
     position: absolute;
-
     width: 100%;
     height: 100%;
-
     border: 2px solid rgba(140, 174, 160, 0.65);
-
     border-radius: 30px;
-
     top: 18px;
     left: 18px;
-
     z-index: 0;
 }
 
@@ -1327,7 +1036,6 @@ section > header > p:last-child {
 ========================================= */
 
 #contacto {
-
     background:
         linear-gradient(
             135deg,
@@ -1338,37 +1046,24 @@ section > header > p:last-child {
 
 
 #contacto address {
-
     margin-top: 30px;
-
     display: flex;
-
     gap: 16px;
-
     flex-wrap: wrap;
-
     font-style: normal;
 }
 
 
 #contacto address a {
-
     display: inline-block;
-
     padding:
         12px 20px;
-
     background-color: var(--blanco);
-
     border:
         1px solid var(--borde);
-
     border-radius: 12px;
-
     color: var(--verde-oscuro);
-
     font-weight: 700;
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
@@ -1376,9 +1071,7 @@ section > header > p:last-child {
 
 
 #contacto address a:hover {
-
     transform: translateY(-3px);
-
     box-shadow:
         0 10px 25px
         rgba(16, 61, 53, 0.12);
@@ -1389,7 +1082,6 @@ section > header > p:last-child {
 
 #tecnologias {
     background-color: #f8faf9;
-
     padding: 90px 8%;
 }
 
@@ -1397,10 +1089,8 @@ section > header > p:last-child {
 /* =========================================
    ENCABEZADO
 ========================================= */
-
 .tecnologias-header {
     max-width: 1200px;
-
     margin:
         0 auto
         50px;
@@ -1409,38 +1099,25 @@ section > header > p:last-child {
 
 .tecnologias-header > p:first-child {
     margin-bottom: 10px;
-
     color: #317164;
-
     font-size: 0.82rem;
-
     font-weight: 700;
-
     letter-spacing: 3px;
-
     text-transform: uppercase;
 }
 
 
 .tecnologias-header h2 {
     margin-bottom: 15px;
-
     color: #153f39;
-
     font-size:
         clamp(2.3rem, 4vw, 3.5rem);
-
     line-height: 1.1;
 }
-
-
 .tecnologias-header > p:last-child {
     max-width: 600px;
-
     color: #64736e;
-
     font-size: 1rem;
-
     line-height: 1.7;
 }
 
@@ -1448,17 +1125,12 @@ section > header > p:last-child {
 /* =========================================
    GRID
 ========================================= */
-
 .tecnologias-grid {
     max-width: 1200px;
-
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns:
         repeat(3, 1fr);
-
     gap: 24px;
 }
 
@@ -1466,73 +1138,51 @@ section > header > p:last-child {
 /* =========================================
    TARJETA
 ========================================= */
-
 .tecnologia-card {
     height: 220px;
-
     perspective: 1000px;
-
     cursor: pointer;
-
     outline: none;
 }
 
 
 /* INTERIOR */
-
 .tecnologia-card-interior {
     width: 100%;
-
     height: 100%;
-
     position: relative;
-
     transition:
         transform 0.7s ease;
-
     transform-style:
         preserve-3d;
 }
 
 
 /* VOLTEAR TARJETA */
-
 .tecnologia-card:hover
 .tecnologia-card-interior,
-
 .tecnologia-card:focus
 .tecnologia-card-interior {
-
     transform:
         rotateY(180deg);
 }
 
-
 /* =========================================
    FRENTE Y REVERSO
 ========================================= */
-
 .tecnologia-frente,
 .tecnologia-reverso {
     position: absolute;
-
     width: 100%;
-
     height: 100%;
-
     padding: 28px;
-
     border-radius: 22px;
-
     backface-visibility: hidden;
-
     -webkit-backface-visibility:
         hidden;
-
     border:
         1px solid
-        #d8e5e0;
-
+        hsl(157, 20%, 87%);
     box-shadow:
         0 12px 30px
         rgba(25, 70, 60, 0.07);
@@ -1542,7 +1192,6 @@ section > header > p:last-child {
 /* =========================================
    PARTE FRONTAL
 ========================================= */
-
 .tecnologia-frente {
     background:
         linear-gradient(
@@ -1550,64 +1199,40 @@ section > header > p:last-child {
             #ffffff,
             #edf5f2
         );
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
     text-align: center;
 }
 
 
 /* ICONO */
-
 .tecnologia-icono {
     width: 65px;
-
     height: 65px;
-
     margin-bottom: 18px;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     border-radius: 18px;
-
     background-color: #dcebe5;
-
     color: #174a42;
-
     font-size: 1.6rem;
-
     font-weight: 800;
 }
-
-
 .tecnologia-frente h3 {
     margin-bottom: 10px;
-
     color: #153f39;
-
     font-size: 1.25rem;
 }
 
 
 /* TEXTO EXPLORAR */
-
 .ver-mas {
     color: #6f8780;
-
     font-size: 0.78rem;
-
     letter-spacing: 1px;
-
     text-transform: uppercase;
 }
 
@@ -1615,7 +1240,6 @@ section > header > p:last-child {
 /* =========================================
    REVERSO
 ========================================= */
-
 .tecnologia-reverso {
     background:
         linear-gradient(
@@ -1623,254 +1247,137 @@ section > header > p:last-child {
             #153f39,
             #245b52
         );
-
     color: white;
-
     transform:
         rotateY(180deg);
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     justify-content: center;
-
     text-align: center;
 }
-
-
 .tecnologia-reverso h3 {
     margin-bottom: 15px;
-
     color: #ffffff;
-
     font-size: 1.25rem;
 }
-
-
 .tecnologia-reverso p {
     margin: 0;
-
     color:
         rgba(255, 255, 255, 0.82);
-
     font-size: 0.9rem;
-
     line-height: 1.6;
 }
-
-
 /* =========================================
    EFECTO EXTRA
 ========================================= */
-
 .tecnologia-card:hover {
     transform:
         translateY(-3px);
 }
 
-
 /* =========================================
    TABLET
 ========================================= */
-
 @media (max-width: 900px) {
-
     .tecnologias-grid {
         grid-template-columns:
             repeat(2, 1fr);
     }
-
 }
-
-
-/* =========================================
-   CELULAR
-========================================= */
-
-@media (max-width: 550px) {
-
-    #tecnologias {
-        padding:
-            65px 20px;
-    }
-
-
-    .tecnologias-grid {
-        grid-template-columns:
-            1fr;
-
-        gap: 18px;
-    }
-
-
-    .tecnologia-card {
-        height: 200px;
-    }
-
-}
-
 
 /* =========================================
    FOOTER
 ========================================= */
-
 body > footer {
-
     padding:
         35px
         max(5%, calc((100% - var(--ancho-maximo)) / 2));
-
-    background-color: #092f2a;
-
+    background-color: #082723;
     color:
         rgba(255, 255, 255, 0.8);
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
     gap: 20px;
-
     flex-wrap: wrap;
-
     font-size: 0.9rem;
 }
 
 
-
 /* =========================================
-   TABLET
+   RESPONSIVE - TABLET
 ========================================= */
-
-@media (max-width: 1050px) {
-
-    #inicio {
-
+@media (max-width: 900px) {
+    .sobre-mi-contenedor {
         grid-template-columns: 1fr;
-
-        text-align: center;
+        gap: 55px;
     }
-
-
-    #inicio h2 + p + p {
-
-        margin-left: auto;
-        margin-right: auto;
+   .sobre-mi-imagen {
+        max-width: 550px;
+        margin: 0 auto;
     }
-    #inicio > div:first-child > div {
-        justify-content: center;
+    .sobre-mi-imagen img {
+        height: 500px;
     }
-
-
-    #inicio figure {
-        width: 550px;
-        max-width: 90%;
-        min-height: 550px;
-        margin: auto;
+    .sobre-mi-imagen::before {
+        height: 500px;
     }
-    #mundo > div {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-    #proyectos > div {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-    #sobre-mi + section ul {
-        grid-template-columns:
-            repeat(3, 1fr);
+    .sobre-mi-texto {
+        max-width: 100%;
+        padding-top: 0;
     }
 }
-
-
-
 /* =========================================
-   CELULAR
+   RESPONSIVE - CELULAR
 ========================================= */
-@media (max-width: 700px) {
-    body > header {
-        flex-direction: column;
-        gap: 16px;
-        padding:
-            15px 20px;
-    }
-
-
-    nav {
-        width: 100%;
-        overflow-x: auto;
-    }
-
-
-    nav ul {
-        justify-content: flex-start;
-        gap: 20px;
-        min-width: max-content;
-    }
-
-
-    section {
+@media (max-width: 550px) {
+    #sobre-mi {
         padding:
             65px 20px;
     }
-
-
-    #inicio {
-        min-height: auto;
-        padding-top: 70px;
-        gap: 55px;
+    .sobre-mi-contenedor {
+        gap: 45px;
     }
-
-
-    #inicio h1 {
-        font-size: 3.4rem;
-        letter-spacing: -2px;
+    .sobre-mi-imagen {
+        max-width: 100%;
     }
-    #inicio figure {
-        min-height: 330px;
-        width: 330px;
-    }
-    #inicio figure div {
-        font-size: 6rem;
-    }
-    #mundo > div {
-        grid-template-columns: 1fr;
-    }
-    #mundo article {
-        min-height: auto;
-    }
+    .sobre-mi-imagen img {
+        height: 420px;
 
-
-    #proyectos > div {
-        grid-template-columns: 1fr;
+        border-radius: 22px;
     }
-
-
-    #sobre-mi + section ul {
-        grid-template-columns:
-            repeat(2, 1fr);
+    .sobre-mi-imagen::before {
+        height: 420px;
+        top: 10px;
+        left: 10px;
+        border-radius: 22px;
     }
-    #contacto address {
-        flex-direction: column;
+    .sobre-mi-imagen figcaption {
+        width: 95%;
+        margin-top: 18px;
+        padding:
+            12px 14px;
+        font-size: 0.82rem;
+        line-height: 1.55;
     }
-
-
-    #contacto address a {
+    .sobre-mi-texto h2 {
+        font-size: 2.2rem;
+    }
+    .sobre-mi-texto p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+  .sobre-mi-texto blockquote {
+        font-size: 1.05rem;
+        margin:
+            25px 0;
+    }
+    .btn-cv {
         width: 100%;
-    }
-    body > footer {
-        flex-direction: column;
         text-align: center;
     }
 }
-
-
-
 /* =========================================
    CELULARES PEQUEÑOS
 ========================================= */
